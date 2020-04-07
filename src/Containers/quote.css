@@ -1,0 +1,85 @@
+
+#quote-box{
+    text-align: center;
+    margin: 15% 20%;
+    font-family: cursive;
+    padding: 2%;
+    background-color: white;
+}
+
+#quote-box p {
+    margin-left: 40%;
+}
+
+.btn{
+    display: flex;
+}
+
+#new-quote{
+    margin-left: 60%;
+    border: none;
+}
+
+button{
+    background-color: #343A40;
+    border-radius: 4px;  
+    color: #fff;
+    cursor: pointer;
+    padding: 8px 16px;
+    
+  }
+
+  button a{
+      text-decoration: none;
+      color: white;
+  }
+  button:visited{
+      border: none;
+  }
+
+
+  @keyframes slidebg {
+    to {
+      background-position:20vw;
+    }
+  }
+
+  body{
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@media only screen and (max-width: 768px){
+    #new-quote{
+        margin-left: 40%;
+    }
+}
+
+@media only screen and (max-width: 420px){
+    p{
+        color: rgb(177, 143, 143);
+    }
+    .btn{
+        display: table;
+    }
+    #new-quote{
+        margin-left: 5%;
+        margin-top: 5px;
+    }
+    #insta{
+        margin-left: 5px;
+    }
+}
